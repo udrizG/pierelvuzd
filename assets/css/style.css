@@ -1,0 +1,639 @@
+html,
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url(../font/Oswald.ttf);
+}
+
+/* NAV */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: #060606;
+}
+
+.nav_links li {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.lang a {
+  color: #060606;
+}
+
+.lang {
+  margin-top: 1rem;
+  margin-right: 100px;
+  text-decoration: none;
+}
+
+.nav_links a.active {
+  background-color: transparent;
+  border-bottom: 3px solid #ffa800;
+  font-weight: bold;
+}
+
+/* VIDEO PLAYER */
+
+.ripped {
+  position: absolute;
+  width: 100%;
+}
+
+.sparklevideo {
+  margin: auto;
+  width: 1366px;
+  height: 722px;
+}
+
+.videoplayer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN CONTENT */
+
+.maincontent {
+  position: relative;
+  margin: 6rem auto;
+  width: 654px;
+  height: 114px;
+}
+
+.maincontent-title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 71px;
+  color: #2f4858;
+  text-align: center;
+  width: 606px;
+  height: 112px;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.maincontent-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #2f4858;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: center;
+  color: #2f4858;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.boldertitle {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #2f4858;
+  text-transform: uppercase;
+}
+
+.content {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #2f4858;
+}
+
+.smallercontent {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2f4858;
+}
+
+.gallery-number {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.maingallery {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+.ripupper {
+  width: 100%;
+  position: absolute;
+  margin-top: -17px;
+}
+
+.riplower {
+  width: 100%;
+  margin-top: -43px;
+  transform: rotate(180deg);
+}
+
+/* SAPŅOTĀJIEM/UZŅĒMĒJIEM */
+
+.maindreams {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-evenly;
+  margin: 4rem;
+}
+
+.poga {
+  width: 233px;
+  height: 50px;
+  background: #ffa800;
+  border-radius: 30px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin: 1rem 4rem 1rem;
+}
+
+.poga:hover {
+  background: #ffcb66;
+}
+
+.send:hover {
+  background: #ffcb66;
+}
+
+/* CONTACTS */
+
+.kontakti {
+  width: 500px;
+  height: 500px;
+  margin: 10rem auto 15rem auto;
+}
+
+.input,
+.tel,
+.koments {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background: rgba(196, 196, 196, 0.4);
+  letter-spacing: -0.015em;
+  outline: none;
+  text-align: left;
+}
+
+.user .input {
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+
+.user .input:last-child {
+  margin-right: 0;
+}
+
+.komentars .koments {
+  height: 200px;
+}
+
+.send {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: #ffa800;
+  border-radius: 30px;
+  height: 62px;
+  width: 182px;
+  color: #ffffff;
+  margin: 50px auto;
+  cursor: pointer;
+}
+
+/* SUPPORTERS */
+
+.supporters p {
+  padding-top: 5rem;
+}
+
+.supporters {
+  margin-top: 17rem;
+  margin-bottom: -2rem;
+  background-image: url(../img/Subtract.png);
+  width: auto;
+  height: 482px;
+}
+
+.atbalstitaji {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin: 7rem 10rem;
+}
+
+.atbalstitaji img {
+  margin-left: 4rem;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5rem;
+  background-image: url(../img/Union.png);
+  height: 376px;
+  width: auto;
+  z-index: 0;
+}
+
+footer ul {
+  text-decoration: none;
+  list-style: none;
+  padding-top: 2rem;
+}
+
+.footermenu li {
+  text-align: left;
+}
+
+.footermenu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footermenu li {
+  margin: 1.3rem;
+}
+
+.footermenu li:first-child {
+  margin-top: 1.8rem;
+}
+
+.sparkleheart li {
+  margin-top: 0.1rem;
+  margin-bottom: -0.4rem;
+}
+
+.sparkleheart-title {
+  margin-bottom: -1.3rem;
+}
+
+.sparkleheart p {
+  color: #ffffff;
+  text-align: left;
+}
+
+.contacts-title {
+  justify-content: right;
+  margin-top: 0.2rem;
+  margin-bottom: -2rem;
+}
+
+.contacts p {
+  color: white;
+  text-align: right;
+}
+
+.contactinfo p {
+  margin-bottom: -0.3rem;
+}
+
+.footer-left img {
+  height: 182px;
+  width: 182px;
+  margin: 5rem 4rem 3rem 3rem;
+}
+
+.copyrights {
+  color: #ffffff;
+  width: 180px;
+  margin-left: 3rem;
+}
+
+.contacts img {
+  height: 36px;
+}
+
+.policy {
+  display: flex;
+  justify-content: end;
+  margin-top: 3.2rem;
+}
+
+.policy a {
+  text-align: right;
+  margin-top: 10rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.socials a:first-child {
+  margin-left: 12rem;
+  margin-right: 2.3rem;
+}
+
+.media {
+  margin-top: 3rem;
+}
+
+/* IDEA */
+
+.juris {
+  width: 606px;
+  height: 112px;
+}
+
+.pic {
+  margin: auto;
+  margin-top: 15rem;
+  width: 1366px;
+  height: 705px;
+  background: url(../img/Juris.jpg);
+}
+
+.pic::before {
+  content: "";
+  position: absolute;
+  width: 1366px;
+  height: 705px;
+  background: linear-gradient(
+    180deg,
+    rgba(47, 72, 88, 0.8) 18.63%,
+    rgba(47, 72, 88, 0) 49.21%
+  );
+  transform: rotate(-180deg);
+}
+
+.pic p {
+  width: 800px;
+  height: 108px;
+}
+
+.pic-quote {
+  display: flex;
+  position: relative;
+  margin: 29.7rem auto;
+  justify-content: center;
+  color: #ffffff;
+  text-transform: none;
+}
+
+/* QUOTE */
+
+.quote {
+  width: 602px;
+  height: 119px;
+  margin: 6rem auto 20rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-by {
+  display: flex;
+  text-transform: capitalize;
+}
+
+.quote-position {
+  display: flex;
+  align-items: center;
+  margin-top: -2.5rem;
+}
+
+.quote-content {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  text-align: left;
+}
+
+.quote-content p:first-child {
+  margin-bottom: -1.6rem;
+}
+
+.quote-icons a {
+  margin-right: 1.5rem;
+}
+
+/* DREAMS */
+
+.dreams {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  position: relative;
+  justify-content: center;
+  grid-gap: 20rem;
+  margin: 3rem auto -10rem auto;
+}
+
+.dream {
+  margin-bottom: 2rem;
+  margin-top: -8rem;
+}
+
+.dreams p {
+  width: 394px;
+  height: 176px;
+}
+
+.dream-icon {
+  margin-left: 8rem;
+  margin-top: 5rem;
+}
+
+.dream-icon:first-child {
+  width: 166.12px;
+  height: 198px;
+}
+
+.dream-icon:last-child {
+  width: 170.6px;
+  height: 198px;
+}
+
+/* SAPŅU BANKA */
+
+.sapnubankavideo {
+  margin: auto;
+  width: 1366px;
+  height: 769px;
+}
+
+.goal {
+  margin-top: 8rem;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: 150px 500px;
+  position: relative;
+  justify-content: center;
+}
+
+.grid-item-4 {
+  grid-area: 2;
+}
+
+.goals-grid img {
+  width: 150px;
+}
+
+.goalquote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 0;
+  background-image: url(../img/Subtract.png);
+  height: 533px;
+}
+
+.goalquote-content img {
+  display: block;
+  margin: auto;
+}
+
+.goalquote-content2 img {
+  display: block;
+  margin: auto;
+}
+
+.goalquote-content p {
+  color: #ffffff;
+  width: 818px;
+  height: 72px;
+}
+
+.goalquote-content2 p {
+  color: #ffffff;
+  width: 1000px;
+  height: 72px;
+}
+
+.dream-select {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10rem;
+  justify-content: center;
+}
+
+.dream-select-icon {
+  display: block;
+  margin: auto;
+}
+
+.private-select,
+public-select {
+  justify-content: center;
+}
+
+.private,
+.public {
+  width: 288px;
+}
+
+/* ATBALSTA */
+
+.vieta,
+.veids {
+  letter-spacing: -0.015em;
+  color: #ffa800;
+}
+
+.uznemums select {
+  width: 288px;
+  height: 43px;
+  padding: 7px;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../img/Poga_forward.svg) 95% / 3.5% no-repeat
+    rgba(196, 196, 196, 0.4);
+}
+
+.select-place,
+select-type {
+}
+
+/* IEDVESMA */
+
+.iedvesmai {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 6% 2%;
+}
+
+.gallery-section {
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(6, 160px);
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.gallery-overlay {
+  background: url(../img/gallery-overlay.jpg);
+  z-index: 1;
+}
+
+.gallery-img {
+  width: 160px;
+  height: 160px;
+}
